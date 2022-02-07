@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "AVR32DA32")(type "Legacy")(uri "C:/Users/BrianSteven/Documents/Kicad_proyectos/AVR-CTF/2022-02-04_01-13-28.lib")(options "")(descr ""))
+  (lib (name "Micro_USB")(type "Legacy")(uri "C:/Users/BrianSteven/Documents/Kicad_proyectos/AVR-CTF/USB3090-XX-X_REVE.lib")(options "")(descr ""))
+)
