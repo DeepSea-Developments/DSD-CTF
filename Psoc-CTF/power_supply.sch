@@ -58,8 +58,6 @@ F 3 "~" H 2500 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 1700 1750 1700
-Wire Wire Line
 	1450 2000 2050 2000
 Wire Wire Line
 	2050 2000 2500 2000
@@ -74,9 +72,6 @@ Wire Wire Line
 Connection ~ 2500 1700
 Wire Wire Line
 	1450 1700 1150 1700
-Connection ~ 1450 1700
-Text Label 1150 1700 0    50   ~ 0
-Vin
 $Comp
 L power:GND #PWR05
 U 1 1 62101312
@@ -339,4 +334,20 @@ Wire Wire Line
 	1150 4050 1100 4050
 Wire Wire Line
 	1550 4050 1600 4050
+Text HLabel 1150 1700 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	1450 1700 1750 1700
+Connection ~ 1450 1700
+$Comp
+L power:+12V #PWR0101
+U 1 1 62124F62
+P 1450 1700
+F 0 "#PWR0101" H 1450 1550 50  0001 C CNN
+F 1 "+12V" H 1465 1873 50  0000 C CNN
+F 2 "" H 1450 1700 50  0001 C CNN
+F 3 "" H 1450 1700 50  0001 C CNN
+	1    1450 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

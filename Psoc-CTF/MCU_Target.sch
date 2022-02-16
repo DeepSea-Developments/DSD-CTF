@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 8950 1475 1    60   ~ 0
-Vin
-Text Label 9350 1475 1    60   ~ 0
-IOREF
 Text Label 8900 2525 0    60   ~ 0
 A0
 Text Label 8900 2625 0    60   ~ 0
@@ -81,8 +77,6 @@ F 3 "" H 9600 1925 50  0000 C CNN
 	1    9600 1925
 	1    0    0    -1  
 $EndComp
-Text Label 8650 1825 0    60   ~ 0
-Reset
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6215E4FA
@@ -222,13 +216,7 @@ Wire Notes Line
 Wire Notes Line
 	9925 850  9925 500 
 Wire Wire Line
-	9350 1475 9350 1725
-Wire Wire Line
-	9350 1725 9400 1725
-Wire Wire Line
 	9400 1925 9150 1925
-Wire Wire Line
-	9400 2025 9050 2025
 Wire Wire Line
 	9400 2325 8950 2325
 Wire Wire Line
@@ -237,9 +225,7 @@ Wire Wire Line
 	9400 2225 9300 2225
 Connection ~ 9300 2225
 Wire Wire Line
-	8950 2325 8950 1475
-Wire Wire Line
-	9050 2025 9050 1375
+	8950 2325 8950 1600
 Wire Wire Line
 	9150 1925 9150 1475
 Wire Wire Line
@@ -883,14 +869,14 @@ Connection ~ 7450 1075
 $Comp
 L power:GND #PWR?
 U 1 1 6215E689
-P 7275 1375
+P 7275 1400
 AR Path="/6215E689" Ref="#PWR?"  Part="1" 
 AR Path="/62149449/6215E689" Ref="#PWR043"  Part="1" 
-F 0 "#PWR043" H 7275 1125 50  0001 C CNN
-F 1 "GND" H 7280 1202 50  0000 C CNN
-F 2 "" H 7275 1375 50  0001 C CNN
-F 3 "" H 7275 1375 50  0001 C CNN
-	1    7275 1375
+F 0 "#PWR043" H 7275 1150 50  0001 C CNN
+F 1 "GND" H 7280 1227 50  0000 C CNN
+F 2 "" H 7275 1400 50  0001 C CNN
+F 3 "" H 7275 1400 50  0001 C CNN
+	1    7275 1400
 	1    0    0    -1  
 $EndComp
 Connection ~ 7275 1375
@@ -1000,14 +986,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6215E6C3
-P 5000 2575
+P 5000 2600
 AR Path="/6215E6C3" Ref="#PWR?"  Part="1" 
 AR Path="/62149449/6215E6C3" Ref="#PWR034"  Part="1" 
-F 0 "#PWR034" H 5000 2325 50  0001 C CNN
-F 1 "GND" H 5005 2402 50  0000 C CNN
-F 2 "" H 5000 2575 50  0001 C CNN
-F 3 "" H 5000 2575 50  0001 C CNN
-	1    5000 2575
+F 0 "#PWR034" H 5000 2350 50  0001 C CNN
+F 1 "GND" H 5005 2427 50  0000 C CNN
+F 2 "" H 5000 2600 50  0001 C CNN
+F 3 "" H 5000 2600 50  0001 C CNN
+	1    5000 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1304,10 +1290,6 @@ $EndComp
 Wire Wire Line
 	6900 2650 7075 2650
 Wire Wire Line
-	6900 2900 7075 2900
-Wire Wire Line
-	6900 3150 7075 3150
-Wire Wire Line
 	7575 2650 7925 2650
 Wire Wire Line
 	7575 2900 7925 2900
@@ -1363,4 +1345,35 @@ Wire Notes Line
 	11200 3500 10000 3500
 Text Notes 10250 3600 0    62   ~ 0
 VOLTAGE PORTS
+Text HLabel 8950 1475 1    50   Input ~ 0
+Vin
+Wire Wire Line
+	5000 2575 5000 2600
+Wire Wire Line
+	7075 2900 6900 2900
+Wire Wire Line
+	6900 3150 7075 3150
+Wire Wire Line
+	7275 1375 7275 1400
+$Comp
+L power:+12V #PWR0102
+U 1 1 62130D8D
+P 8950 1600
+F 0 "#PWR0102" H 8950 1450 50  0001 C CNN
+F 1 "+12V" V 8965 1728 50  0000 L CNN
+F 2 "" H 8950 1600 50  0001 C CNN
+F 3 "" H 8950 1600 50  0001 C CNN
+	1    8950 1600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8950 1600
+Wire Wire Line
+	8950 1600 8950 1475
+Text Label 8650 1825 0    50   ~ 0
+XRES
+NoConn ~ 9400 1725
+Wire Wire Line
+	9050 1375 9050 2025
+Wire Wire Line
+	9050 2025 9400 2025
 $EndSCHEMATC
