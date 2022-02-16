@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name CY8C4248LQI-BL583)(type Legacy)(uri C:/Users/BrianSteven/Documents/Kicad_proyectos/DeepSea/DSD-CTF/Psoc-CTF/CY8C4248LQI-BL583.lib)(options "")(descr ""))
+  (lib (name 23LC1024)(type Legacy)(uri C:/Users/BrianSteven/Documents/Kicad_proyectos/DeepSea/DSD-CTF/Psoc-CTF/23LC1024.lib)(options "")(descr ""))
+  (lib (name SST25VF512)(type Legacy)(uri C:/Users/BrianSteven/Documents/Kicad_proyectos/DeepSea/DSD-CTF/Psoc-CTF/SST25VF512.lib)(options "")(descr ""))
 )
