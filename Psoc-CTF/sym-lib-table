@@ -3,4 +3,6 @@
   (lib (name 23LC1024)(type Legacy)(uri C:/Users/BrianSteven/Documents/Kicad_proyectos/DeepSea/DSD-CTF/Psoc-CTF/23LC1024.lib)(options "")(descr ""))
   (lib (name SST25VF512)(type Legacy)(uri C:/Users/BrianSteven/Documents/Kicad_proyectos/DeepSea/DSD-CTF/Psoc-CTF/SST25VF512.lib)(options "")(descr ""))
   (lib (name FM24C04B)(type Legacy)(uri C:/Users/BrianSteven/Documents/Kicad_proyectos/DeepSea/DSD-CTF/Psoc-CTF/FM24C04B-GTR.lib)(options "")(descr ""))
+  (lib (name Push_button_FSM4JSMATR)(type Legacy)(uri ${KIPRJMOD}/Push_button_FSM4JSMATR.lib)(options "")(descr ""))
+  (lib (name microUSB)(type Legacy)(uri ${KIPRJMOD}/microUSB.lib)(options "")(descr ""))
 )
