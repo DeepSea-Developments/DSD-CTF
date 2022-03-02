@@ -5,4 +5,6 @@
   (lib (name FM24C04B)(type Legacy)(uri C:/Users/BrianSteven/Documents/Kicad_proyectos/DeepSea/DSD-CTF/Psoc-CTF/FM24C04B-GTR.lib)(options "")(descr ""))
   (lib (name Push_button_FSM4JSMATR)(type Legacy)(uri ${KIPRJMOD}/Push_button_FSM4JSMATR.lib)(options "")(descr ""))
   (lib (name microUSB)(type Legacy)(uri ${KIPRJMOD}/microUSB.lib)(options "")(descr ""))
+  (lib (name CAP_SLIDER)(type Legacy)(uri ${KIPRJMOD}/CAP_SLIDER.lib)(options "")(descr ""))
+  (lib (name COM-11821)(type Legacy)(uri ${KIPRJMOD}/COM-11821.lib)(options "")(descr ""))
 )
