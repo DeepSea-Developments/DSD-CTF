@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name AVR-CTF-symbols)(type Legacy)(uri ${KIPRJMOD}/AVR-CTF-symbols.lib)(options "")(descr ""))
+)
