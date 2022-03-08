@@ -311,8 +311,6 @@ F 3 "~" H 4125 1900 50  0001 C CNN
 	1    4125 1900
 	-1   0    0    1   
 $EndComp
-Text HLabel 4475 1800 2    50   Input ~ 0
-AMP_READ
 $Comp
 L Device:D_Schottky D2
 U 1 1 621D0263
@@ -438,4 +436,15 @@ Wire Wire Line
 	4325 1900 4400 1900
 Wire Wire Line
 	4400 1900 4400 1950
+$Comp
+L power:GND1 #PWR056
+U 1 1 622A7FA3
+P 4475 1800
+F 0 "#PWR056" H 4475 1550 50  0001 C CNN
+F 1 "GND1" V 4480 1672 50  0000 R CNN
+F 2 "" H 4475 1800 50  0001 C CNN
+F 3 "" H 4475 1800 50  0001 C CNN
+	1    4475 1800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
