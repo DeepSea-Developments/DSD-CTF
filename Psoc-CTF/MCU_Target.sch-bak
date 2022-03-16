@@ -668,8 +668,6 @@ Text Label 1675 2050 2    50   ~ 0
 XTAL24I
 Text Label 1675 2350 2    50   ~ 0
 XTAL24O
-Text Label 2175 1925 0    50   ~ 0
-AMP_READ
 Wire Wire Line
 	2575 1925 2175 1925
 Wire Wire Line
@@ -1239,8 +1237,6 @@ Wire Notes Line
 	11200 3500 10000 3500
 Text Notes 10250 3600 0    62   ~ 0
 VOLTAGE PORTS
-Text HLabel 8950 1475 1    50   Input ~ 0
-Vin
 Wire Wire Line
 	5000 2575 5000 2600
 Wire Wire Line
@@ -1260,9 +1256,6 @@ F 3 "" H 8950 1600 50  0001 C CNN
 	1    8950 1600
 	0    -1   -1   0   
 $EndComp
-Connection ~ 8950 1600
-Wire Wire Line
-	8950 1600 8950 1475
 Text Label 8650 1825 0    50   ~ 0
 XRES
 NoConn ~ 9400 1725
@@ -1423,18 +1416,6 @@ Wire Notes Line
 	1825 6050 5575 6050
 Wire Notes Line
 	5575 6050 5575 4150
-Text Label 4550 2125 2    60   ~ 0
-A0
-Text Label 8900 2925 0    50   ~ 0
-I2C_SDA
-Text Label 8900 3025 0    50   ~ 0
-I2C_SCL
-Text Label 4550 2025 2    60   ~ 0
-A1
-Text Label 4550 1925 2    60   ~ 0
-A2
-Text Label 4550 1825 2    60   ~ 0
-A3
 Text Label 2300 3825 0    50   ~ 0
 D7
 Text Label 2300 3925 0    50   ~ 0
@@ -1805,17 +1786,6 @@ Wire Wire Line
 	8925 5800 8925 5700
 Connection ~ 8925 5700
 $Comp
-L Device:Antenna_Shield AE1
-U 1 1 6212DD2F
-P 7575 3450
-F 0 "AE1" H 7719 3489 50  0000 L CNN
-F 1 "Antenna_Shield" H 7719 3398 50  0000 L CNN
-F 2 "Psoc-CTF:Antena_pad" H 7575 3550 50  0001 C CNN
-F 3 "~" H 7575 3550 50  0001 C CNN
-	1    7575 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 6212E561
 P 7575 3725
@@ -1830,10 +1800,6 @@ F 3 "" H 7575 3725 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7575 3650 7575 3700
-Wire Wire Line
-	7675 3650 7675 3700
-Wire Wire Line
-	7675 3700 7575 3700
 Connection ~ 7575 3700
 Wire Wire Line
 	7575 3700 7575 3725
@@ -1961,7 +1927,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 4675 9350 4675
 Text Label 9350 4675 0    50   ~ 0
-5VUSB
+VUSB
 Wire Wire Line
 	10150 4775 9950 4775
 Wire Wire Line
@@ -1978,7 +1944,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 4875 8225 4875
 Text Label 8225 4875 2    50   ~ 0
-5VUSB
+VUSB
 Text Label 8225 4975 2    50   ~ 0
 D+
 Text Label 9950 4775 0    50   ~ 0
@@ -1990,11 +1956,11 @@ Wire Wire Line
 Text Label 1250 4625 2    50   ~ 0
 3V3SWD
 Text HLabel 10625 3700 2    50   Input ~ 0
-5VBUS
+VBUS
 Wire Wire Line
 	10625 3700 10400 3700
 Text Label 10400 3700 0    50   ~ 0
-5VUSB
+VUSB
 Wire Notes Line
 	5700 4200 11100 4200
 Wire Notes Line
@@ -2077,171 +2043,39 @@ Text GLabel 2300 1725 0    50   Input ~ 0
 P5.0
 Text GLabel 2300 1825 0    50   Input ~ 0
 P5.1
-Text GLabel 850  6675 0    50   Input ~ 0
-P4.0
 Wire Wire Line
-	1150 6675 850  6675
+	1550 6725 1850 6725
 Wire Wire Line
-	1150 6775 850  6775
+	3325 7175 2975 7175
 Wire Wire Line
-	1150 6875 850  6875
+	1850 7025 1550 7025
 Wire Wire Line
-	1150 6975 850  6975
+	1850 7125 1550 7125
 Wire Wire Line
-	1150 7075 850  7075
+	1850 7225 1550 7225
 Wire Wire Line
-	1150 7175 850  7175
-Wire Wire Line
-	1150 7275 850  7275
-Wire Wire Line
-	1150 7375 850  7375
-Wire Wire Line
-	1950 6675 1650 6675
-Wire Wire Line
-	1950 6775 1650 6775
-Wire Wire Line
-	1950 6875 1650 6875
-Wire Wire Line
-	1950 6975 1650 6975
-Wire Wire Line
-	1950 7075 1650 7075
-Wire Wire Line
-	1950 7175 1650 7175
-Wire Wire Line
-	1950 7275 1650 7275
-Wire Wire Line
-	1950 7375 1650 7375
-Wire Wire Line
-	2725 6675 2425 6675
-Wire Wire Line
-	2725 6775 2425 6775
-Wire Wire Line
-	2725 6875 2425 6875
-Wire Wire Line
-	2725 6975 2425 6975
-Wire Wire Line
-	2725 7075 2425 7075
-Wire Wire Line
-	2725 7175 2425 7175
-Wire Wire Line
-	2725 7275 2425 7275
-Wire Wire Line
-	2725 7375 2425 7375
-Wire Wire Line
-	3525 6675 3225 6675
-Wire Wire Line
-	3525 6775 3225 6775
-Wire Wire Line
-	3525 6875 3225 6875
-Wire Wire Line
-	3525 6975 3225 6975
-Wire Wire Line
-	3525 7075 3225 7075
-Wire Wire Line
-	3525 7175 3225 7175
-Wire Wire Line
-	3525 7275 3225 7275
-Wire Wire Line
-	3525 7375 3225 7375
-Text GLabel 1950 6675 2    50   Input ~ 0
-P4.1
-Text GLabel 2425 6675 0    50   Input ~ 0
+	1850 7325 1550 7325
+Text GLabel 3325 7075 2    50   Input ~ 0
 P5.0
-Text GLabel 3525 6675 2    50   Input ~ 0
+Text GLabel 3325 7175 2    50   Input ~ 0
 P5.1
-Text GLabel 850  6775 0    50   Input ~ 0
-P0.0
-Text GLabel 850  6875 0    50   Input ~ 0
-P0.1
-Text GLabel 850  6975 0    50   Input ~ 0
-P0.2
-Text GLabel 850  7075 0    50   Input ~ 0
-P0.3
-Text GLabel 850  7175 0    50   Input ~ 0
-P0.4
-Text GLabel 850  7275 0    50   Input ~ 0
-P0.5
-Text GLabel 850  7375 0    50   Input ~ 0
-P0.6
-Text GLabel 1950 6775 2    50   Input ~ 0
-P1.0
-Text GLabel 1950 6875 2    50   Input ~ 0
-P1.1
-Text GLabel 1950 6975 2    50   Input ~ 0
-P1.2
-Text GLabel 1950 7075 2    50   Input ~ 0
-P1.3
-Text GLabel 1950 7175 2    50   Input ~ 0
-P1.4
-Text GLabel 1950 7275 2    50   Input ~ 0
-P1.5
-Text GLabel 1950 7375 2    50   Input ~ 0
-P1.6
-Text GLabel 2425 6775 0    50   Input ~ 0
-P2.0
-Text GLabel 2425 6875 0    50   Input ~ 0
-P2.1
-Text GLabel 2425 6975 0    50   Input ~ 0
-P2.2
-Text GLabel 2425 7075 0    50   Input ~ 0
-P2.3
-Text GLabel 2425 7175 0    50   Input ~ 0
-P2.4
-Text GLabel 2425 7275 0    50   Input ~ 0
-P2.5
-Text GLabel 2425 7375 0    50   Input ~ 0
+Text GLabel 1850 6725 2    50   Input ~ 0
 P2.6
-Text GLabel 2425 7475 0    50   Input ~ 0
+Text GLabel 1850 6825 2    50   Input ~ 0
 P2.7
-$Comp
-L Connector_Generic:Conn_02x09_Counter_Clockwise J6
-U 1 1 62374FC9
-P 1350 7075
-F 0 "J6" H 1400 7600 50  0000 C CNN
-F 1 "Header 9x2" H 1400 7601 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 1350 7075 50  0001 C CNN
-F 3 "~" H 1350 7075 50  0001 C CNN
-	1    1350 7075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x09_Counter_Clockwise J7
-U 1 1 623763F0
-P 2925 7075
-F 0 "J7" H 2950 7575 50  0000 C CNN
-F 1 "Header 9x2" H 2975 7601 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 2925 7075 50  0001 C CNN
-F 3 "~" H 2925 7075 50  0001 C CNN
-	1    2925 7075
-	1    0    0    -1  
-$EndComp
-Text GLabel 850  7475 0    50   Input ~ 0
-P0.7
 Wire Wire Line
-	850  7475 1150 7475
-Text GLabel 1950 7475 2    50   Input ~ 0
-P1.7
+	1550 6825 1850 6825
 Wire Wire Line
-	1950 7475 1650 7475
-Wire Wire Line
-	2725 7475 2425 7475
-Wire Wire Line
-	3225 7475 3525 7475
-Text GLabel 3525 6775 2    50   Input ~ 0
-P3.0
-Text GLabel 3525 6875 2    50   Input ~ 0
+	1550 7425 1850 7425
+Text GLabel 1850 7025 2    50   Input ~ 0
 P3.1
-Text GLabel 3525 6975 2    50   Input ~ 0
+Text GLabel 1850 7125 2    50   Input ~ 0
 P3.2
-Text GLabel 3525 7075 2    50   Input ~ 0
+Text GLabel 1850 7225 2    50   Input ~ 0
 P3.3
-Text GLabel 3525 7175 2    50   Input ~ 0
-P3.4
-Text GLabel 3525 7275 2    50   Input ~ 0
-P3.5
-Text GLabel 3525 7375 2    50   Input ~ 0
+Text GLabel 1850 7325 2    50   Input ~ 0
 P3.6
-Text GLabel 3525 7475 2    50   Input ~ 0
+Text GLabel 1850 7425 2    50   Input ~ 0
 P3.7
 Wire Notes Line
 	550  6200 550  7750
@@ -2254,7 +2088,7 @@ P 4800 6590
 F 0 "CSS1" H 4690 6710 50  0000 L CNN
 F 1 "cap_slider" H 4625 6070 50  0000 L CNN
 F 2 "Psoc-CTF:CAP_SLIDER_5_PADS" H 4800 6590 50  0001 C CNN
-F 3 "" H 4800 6590 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-CE210709_CapSense_Linear_Slider_and_Buttons-Code+Example-v02_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0e70871b0431&utm_source=cypress&utm_medium=referral&utm_campaign=202110_globe_en_all_integration-files" H 4800 6590 50  0001 C CNN
 	1    4800 6590
 	1    0    0    -1  
 $EndComp
@@ -3095,8 +2929,8 @@ L Push_button_FSM4JSMATR:4-1437565-2 SW?
 U 1 1 62F866E5
 P 1500 3575
 AR Path="/621CB8DC/62F866E5" Ref="SW?"  Part="1" 
-AR Path="/62149449/62F866E5" Ref="SW?"  Part="1" 
-F 0 "SW?" V 1925 3550 50  0000 L CNN
+AR Path="/62149449/62F866E5" Ref="SW3"  Part="1" 
+F 0 "SW3" V 1925 3550 50  0000 L CNN
 F 1 "FSM4JSMATR" V 2000 3425 50  0000 L CNN
 F 2 "Psoc-CTF:Push_button_FSM4JSMATR" H 1500 3575 50  0001 L BNN
 F 3 "" H 1500 3575 50  0001 L BNN
@@ -3124,8 +2958,8 @@ L power:GND #PWR?
 U 1 1 63095EED
 P 1225 3900
 AR Path="/63095EED" Ref="#PWR?"  Part="1" 
-AR Path="/62149449/63095EED" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1225 3650 50  0001 C CNN
+AR Path="/62149449/63095EED" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 1225 3650 50  0001 C CNN
 F 1 "GND" H 1230 3727 50  0000 C CNN
 F 2 "" H 1225 3900 50  0001 C CNN
 F 3 "" H 1225 3900 50  0001 C CNN
@@ -3137,15 +2971,14 @@ Wire Wire Line
 Connection ~ 1400 3900
 Wire Notes Line
 	3825 7200 5600 7200
-Wire Notes Line
-	3825 6200 3825 10350
 $Comp
 L Device:LED D?
 U 1 1 63124CC9
 P 6475 7425
 AR Path="/63124CC9" Ref="D?"  Part="1" 
 AR Path="/620E3406/63124CC9" Ref="D?"  Part="1" 
-F 0 "D?" V 6468 7642 50  0000 C CNN
+AR Path="/62149449/63124CC9" Ref="D8"  Part="1" 
+F 0 "D8" V 6468 7642 50  0000 C CNN
 F 1 "LED" V 6375 7625 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6475 7425 50  0001 C CNN
 F 3 "~" H 6475 7425 50  0001 C CNN
@@ -3158,8 +2991,8 @@ U 1 1 63124CCF
 P 6475 7125
 AR Path="/63124CCF" Ref="R?"  Part="1" 
 AR Path="/620E3406/63124CCF" Ref="R?"  Part="1" 
-AR Path="/62149449/63124CCF" Ref="R?"  Part="1" 
-F 0 "R?" H 6268 7125 50  0000 C CNN
+AR Path="/62149449/63124CCF" Ref="R40"  Part="1" 
+F 0 "R40" H 6268 7125 50  0000 C CNN
 F 1 "1K" H 6275 7025 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6405 7125 50  0001 C CNN
 F 3 "~" H 6475 7125 50  0001 C CNN
@@ -3172,8 +3005,8 @@ U 1 1 63124CDB
 P 6475 7575
 AR Path="/63124CDB" Ref="#PWR?"  Part="1" 
 AR Path="/620E3406/63124CDB" Ref="#PWR?"  Part="1" 
-AR Path="/62149449/63124CDB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6475 7325 50  0001 C CNN
+AR Path="/62149449/63124CDB" Ref="#PWR066"  Part="1" 
+F 0 "#PWR066" H 6475 7325 50  0001 C CNN
 F 1 "GND" H 6475 7425 50  0000 R CNN
 F 2 "" H 6475 7575 50  0001 C CNN
 F 3 "" H 6475 7575 50  0001 C CNN
@@ -3187,8 +3020,8 @@ L Push_button_FSM4JSMATR:4-1437565-2 SW?
 U 1 1 63169744
 P 7250 7550
 AR Path="/621CB8DC/63169744" Ref="SW?"  Part="1" 
-AR Path="/62149449/63169744" Ref="SW?"  Part="1" 
-F 0 "SW?" V 7725 7500 50  0000 L CNN
+AR Path="/62149449/63169744" Ref="SW4"  Part="1" 
+F 0 "SW4" V 7725 7500 50  0000 L CNN
 F 1 "FSM4JSMATR" V 7800 7325 50  0000 L CNN
 F 2 "Psoc-CTF:Push_button_FSM4JSMATR" H 7250 7550 50  0001 L BNN
 F 3 "" H 7250 7550 50  0001 L BNN
@@ -3201,8 +3034,8 @@ L Push_button_FSM4JSMATR:4-1437565-2 SW?
 U 1 1 6316B205
 P 8050 7550
 AR Path="/621CB8DC/6316B205" Ref="SW?"  Part="1" 
-AR Path="/62149449/6316B205" Ref="SW?"  Part="1" 
-F 0 "SW?" V 8525 7525 50  0000 L CNN
+AR Path="/62149449/6316B205" Ref="SW5"  Part="1" 
+F 0 "SW5" V 8525 7525 50  0000 L CNN
 F 1 "FSM4JSMATR" V 8625 7375 50  0000 L CNN
 F 2 "Psoc-CTF:Push_button_FSM4JSMATR" H 8050 7550 50  0001 L BNN
 F 3 "" H 8050 7550 50  0001 L BNN
@@ -3216,8 +3049,6 @@ Wire Wire Line
 	6425 6850 6475 6850
 Wire Wire Line
 	6475 6850 6475 6975
-Text GLabel 7025 7250 0    50   Input ~ 0
-P2.0
 Wire Wire Line
 	7150 7300 7150 7250
 Wire Wire Line
@@ -3239,8 +3070,8 @@ U 1 1 632C93B7
 P 7250 7100
 AR Path="/632C93B7" Ref="R?"  Part="1" 
 AR Path="/620E3406/632C93B7" Ref="R?"  Part="1" 
-AR Path="/62149449/632C93B7" Ref="R?"  Part="1" 
-F 0 "R?" H 7075 7150 50  0000 C CNN
+AR Path="/62149449/632C93B7" Ref="R41"  Part="1" 
+F 0 "R41" H 7075 7150 50  0000 C CNN
 F 1 "10K" H 7075 7075 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7180 7100 50  0001 C CNN
 F 3 "~" H 7250 7100 50  0001 C CNN
@@ -3255,8 +3086,8 @@ L power:VDD #PWR?
 U 1 1 632CA19E
 P 7250 6950
 AR Path="/632CA19E" Ref="#PWR?"  Part="1" 
-AR Path="/62149449/632CA19E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7250 6800 50  0001 C CNN
+AR Path="/62149449/632CA19E" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 7250 6800 50  0001 C CNN
 F 1 "VDD" H 7200 7100 50  0000 L CNN
 F 2 "" H 7250 6950 50  0001 C CNN
 F 3 "" H 7250 6950 50  0001 C CNN
@@ -3269,8 +3100,8 @@ U 1 1 632CA862
 P 7150 7850
 AR Path="/632CA862" Ref="#PWR?"  Part="1" 
 AR Path="/620E3406/632CA862" Ref="#PWR?"  Part="1" 
-AR Path="/62149449/632CA862" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7150 7600 50  0001 C CNN
+AR Path="/62149449/632CA862" Ref="#PWR067"  Part="1" 
+F 0 "#PWR067" H 7150 7600 50  0001 C CNN
 F 1 "GND" H 7150 7700 50  0000 R CNN
 F 2 "" H 7150 7850 50  0001 C CNN
 F 3 "" H 7150 7850 50  0001 C CNN
@@ -3290,8 +3121,8 @@ U 1 1 63311CD3
 P 7950 7850
 AR Path="/63311CD3" Ref="#PWR?"  Part="1" 
 AR Path="/620E3406/63311CD3" Ref="#PWR?"  Part="1" 
-AR Path="/62149449/63311CD3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7950 7600 50  0001 C CNN
+AR Path="/62149449/63311CD3" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 7950 7600 50  0001 C CNN
 F 1 "GND" H 7950 7700 50  0000 R CNN
 F 2 "" H 7950 7850 50  0001 C CNN
 F 3 "" H 7950 7850 50  0001 C CNN
@@ -3306,7 +3137,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 7250 8150 7300
 Text GLabel 7850 7250 0    50   Input ~ 0
-P2.6
+P1.1
 Wire Wire Line
 	7850 7250 7950 7250
 Connection ~ 7950 7250
@@ -3316,8 +3147,8 @@ U 1 1 633A1825
 P 8050 7100
 AR Path="/633A1825" Ref="R?"  Part="1" 
 AR Path="/620E3406/633A1825" Ref="R?"  Part="1" 
-AR Path="/62149449/633A1825" Ref="R?"  Part="1" 
-F 0 "R?" H 7875 7150 50  0000 C CNN
+AR Path="/62149449/633A1825" Ref="R42"  Part="1" 
+F 0 "R42" H 7875 7150 50  0000 C CNN
 F 1 "10K" H 7875 7075 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7980 7100 50  0001 C CNN
 F 3 "~" H 8050 7100 50  0001 C CNN
@@ -3332,8 +3163,8 @@ L power:VDD #PWR?
 U 1 1 633A1B7B
 P 8050 6950
 AR Path="/633A1B7B" Ref="#PWR?"  Part="1" 
-AR Path="/62149449/633A1B7B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8050 6800 50  0001 C CNN
+AR Path="/62149449/633A1B7B" Ref="#PWR070"  Part="1" 
+F 0 "#PWR070" H 8050 6800 50  0001 C CNN
 F 1 "VDD" H 7975 7100 50  0000 L CNN
 F 2 "" H 8050 6950 50  0001 C CNN
 F 3 "" H 8050 6950 50  0001 C CNN
@@ -3344,10 +3175,6 @@ Text Notes 6900 6700 0    62   ~ 0
 USER BUTTON
 Text Notes 7825 6700 0    62   ~ 0
 BOOT BUTTON
-Text Label 8150 7250 0    50   ~ 0
-Boot
-Text Label 4300 2525 0    50   ~ 0
-Boot
 Wire Notes Line
 	5700 6525 5700 8325
 Wire Notes Line
@@ -3356,4 +3183,120 @@ Wire Notes Line
 	8500 8325 8500 6525
 Wire Notes Line
 	8500 6525 5700 6525
+Text Label 2425 3425 0    50   ~ 0
+RXD2
+Text Label 2425 3525 0    50   ~ 0
+TXD2
+$Comp
+L power:GND1 #PWR0103
+U 1 1 623C2929
+P 2175 1925
+F 0 "#PWR0103" H 2175 1675 50  0001 C CNN
+F 1 "GND1" V 2180 1797 50  0000 R CNN
+F 2 "" H 2175 1925 50  0001 C CNN
+F 3 "" H 2175 1925 50  0001 C CNN
+	1    2175 1925
+	0    1    1    0   
+$EndComp
+Text Label 8900 2925 0    60   ~ 0
+A4
+Text Label 8900 3025 0    60   ~ 0
+A5
+Text Label 4300 3125 0    60   ~ 0
+A0
+Text Label 4425 3025 2    60   ~ 0
+A1
+Text Label 4425 2925 2    60   ~ 0
+A2
+Text Label 4425 2825 2    60   ~ 0
+A3
+Text Label 4425 2725 2    60   ~ 0
+A4
+Text Label 4425 2625 2    60   ~ 0
+A5
+Text GLabel 7025 7250 0    50   Input ~ 0
+P1.0
+$Comp
+L Device:Antenna_Shield AE1
+U 1 1 623817F7
+P 7575 3450
+F 0 "AE1" H 7719 3489 50  0000 L CNN
+F 1 "Antenna_Shield" H 7719 3398 50  0000 L CNN
+F 2 "Psoc-CTF:Antenna_pad" H 7575 3550 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-AN91445_Antenna_Design_and_RF_Layout_Guidelines-ApplicationNotes-v09_00-EN.pdf?fileId=8ac78c8c7cdc391c017d073e054f6227&utm_source=cypress&utm_medium=referral&utm_campaign=202110_globe_en_all_integration-application_note" H 7575 3550 50  0001 C CNN
+	1    7575 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7575 3700 7675 3700
+Wire Wire Line
+	7675 3700 7675 3650
+$Comp
+L power:VDD #PWR?
+U 1 1 6249F1F9
+P 1800 6625
+AR Path="/6249F1F9" Ref="#PWR?"  Part="1" 
+AR Path="/62149449/6249F1F9" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 1800 6475 50  0001 C CNN
+F 1 "VDD" V 1800 6750 50  0000 L CNN
+F 2 "" H 1800 6625 50  0001 C CNN
+F 3 "" H 1800 6625 50  0001 C CNN
+	1    1800 6625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 6625 1800 6625
+Wire Notes Line
+	3825 6200 3825 10350
+Text GLabel 1850 6925 2    50   Input ~ 0
+P3.0
+Wire Wire Line
+	1850 6925 1550 6925
+$Comp
+L power:GND #PWR?
+U 1 1 62731B81
+P 1900 7525
+AR Path="/62731B81" Ref="#PWR?"  Part="1" 
+AR Path="/62149449/62731B81" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 1900 7275 50  0001 C CNN
+F 1 "GND" V 1925 7400 50  0000 R CNN
+F 2 "" H 1900 7525 50  0001 C CNN
+F 3 "" H 1900 7525 50  0001 C CNN
+	1    1900 7525
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1900 7525 1550 7525
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 62831799
+P 2775 7075
+F 0 "J7" H 2693 6742 50  0000 C CNN
+F 1 "Conn_01x04" H 2693 6741 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2775 7075 50  0001 C CNN
+F 3 "~" H 2775 7075 50  0001 C CNN
+	1    2775 7075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3325 7075 2975 7075
+Wire Wire Line
+	3325 6975 2975 6975
+Text GLabel 3325 6875 2    50   Input ~ 0
+P4.0
+Text GLabel 3325 6975 2    50   Input ~ 0
+P4.1
+Wire Wire Line
+	3325 6875 2975 6875
+$Comp
+L Connector_Generic:Conn_01x10 J6
+U 1 1 629E2128
+P 1350 7025
+F 0 "J6" H 1268 7550 50  0000 C CNN
+F 1 "Conn_01x10" H 1268 7551 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 1350 7025 50  0001 C CNN
+F 3 "~" H 1350 7025 50  0001 C CNN
+	1    1350 7025
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

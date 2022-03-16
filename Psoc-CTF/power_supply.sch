@@ -70,8 +70,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 1700 2750 1700
 Connection ~ 2300 1700
-Wire Wire Line
-	1250 1700 950  1700
 $Comp
 L power:GND #PWR04
 U 1 1 62101312
@@ -326,8 +324,6 @@ Wire Wire Line
 	2000 4075 1900 4075
 Wire Wire Line
 	2300 4075 2425 4075
-Text HLabel 950  1700 0    50   Input ~ 0
-Vin
 Connection ~ 1250 1700
 $Comp
 L power:+12V #PWR01
@@ -383,7 +379,7 @@ $EndComp
 Text HLabel 1450 3850 0    50   Input ~ 0
 3V3SWD
 Text HLabel 4700 3075 2    50   Input ~ 0
-5VBUS
+VBUS
 Wire Wire Line
 	1875 3850 1900 3850
 Wire Wire Line
@@ -447,4 +443,86 @@ F 3 "" H 4475 1800 50  0001 C CNN
 	1    4475 1800
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:+3V3 #PWR014
+U 1 1 62395ED8
+P 5075 4575
+F 0 "#PWR014" H 5075 4425 50  0001 C CNN
+F 1 "+3V3" H 5090 4748 50  0000 C CNN
+F 2 "" H 5075 4575 50  0001 C CNN
+F 3 "" H 5075 4575 50  0001 C CNN
+	1    5075 4575
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 4875
+$Comp
+L power:GND #PWR013
+U 1 1 6239862F
+P 4250 4875
+F 0 "#PWR013" H 4250 4625 50  0001 C CNN
+F 1 "GND" H 4255 4702 50  0000 C CNN
+F 2 "" H 4250 4875 50  0001 C CNN
+F 3 "" H 4250 4875 50  0001 C CNN
+	1    4250 4875
+	1    0    0    -1  
+$EndComp
+Connection ~ 4625 4875
+Wire Wire Line
+	4625 4875 5075 4875
+Wire Wire Line
+	4250 4875 4625 4875
+Connection ~ 4625 4575
+Wire Wire Line
+	4625 4575 5075 4575
+Wire Wire Line
+	4550 4575 4625 4575
+$Comp
+L Device:C C41
+U 1 1 6239863B
+P 5075 4725
+F 0 "C41" H 5190 4771 50  0000 L CNN
+F 1 "10uF" H 5190 4680 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5113 4575 50  0001 C CNN
+F 3 "~" H 5075 4725 50  0001 C CNN
+	1    5075 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C40
+U 1 1 62398641
+P 4625 4725
+F 0 "C40" H 4743 4771 50  0000 L CNN
+F 1 "10uF" H 4743 4680 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4663 4575 50  0001 C CNN
+F 3 "~" H 4625 4725 50  0001 C CNN
+	1    4625 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4575 3950 4575
+$Comp
+L Regulator_Linear:AMS1117-3.3 U6
+U 1 1 62398648
+P 4250 4575
+F 0 "U6" H 4250 4817 50  0000 C CNN
+F 1 "AMS1117-3.3" H 4250 4726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4250 4775 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4350 4325 50  0001 C CNN
+	1    4250 4575
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 4200 0    62   ~ 0
+ESP POWER SUPPLY
+$Comp
+L power:+5V #PWR012
+U 1 1 62398656
+P 3800 4575
+F 0 "#PWR012" H 3800 4425 50  0001 C CNN
+F 1 "+5V" H 3800 4750 50  0000 C CNN
+F 2 "" H 3800 4575 50  0001 C CNN
+F 3 "" H 3800 4575 50  0001 C CNN
+	1    3800 4575
+	1    0    0    -1  
+$EndComp
+Connection ~ 5075 4575
 $EndSCHEMATC
