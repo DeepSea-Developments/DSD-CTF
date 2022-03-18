@@ -607,7 +607,7 @@ U 1 1 6226458C
 P 775 4950
 F 0 "J4" H 900 4850 50  0000 L CNN
 F 1 "Conn_01x02" H 550 4725 50  0000 L CNN
-F 2 "" H 775 4950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 775 4950 50  0001 C CNN
 F 3 "~" H 775 4950 50  0001 C CNN
 	1    775  4950
 	-1   0    0    1   
@@ -618,7 +618,7 @@ U 1 1 62265580
 P 1725 4950
 F 0 "J5" H 1825 4925 50  0000 L CNN
 F 1 "Conn_01x02" H 1525 4725 50  0000 L CNN
-F 2 "" H 1725 4950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1725 4950 50  0001 C CNN
 F 3 "~" H 1725 4950 50  0001 C CNN
 	1    1725 4950
 	-1   0    0    1   
@@ -711,7 +711,7 @@ U 1 1 622B53CE
 P 4450 4825
 F 0 "J7" H 4368 4500 50  0000 C CNN
 F 1 "Conn_01x03" H 4368 4591 50  0000 C CNN
-F 2 "" H 4450 4825 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4450 4825 50  0001 C CNN
 F 3 "~" H 4450 4825 50  0001 C CNN
 	1    4450 4825
 	-1   0    0    1   
@@ -928,7 +928,7 @@ U 1 1 622635F7
 P 10950 4950
 F 0 "J9" H 10850 5450 50  0000 L CNN
 F 1 "USB3090-XX-X_REVE" H 10375 5550 50  0001 L CNN
-F 2 "GCT_USB3090-XX-X_REVE" H 10950 4950 50  0001 L BNN
+F 2 "AVR-CTF-footprints:GCT_USB3090-XX-X_REVE" H 10950 4950 50  0001 L BNN
 F 3 "" H 10950 4950 50  0001 L BNN
 F 4 "GCT" H 10950 4950 50  0001 L BNN "MANUFACTURER"
 	1    10950 4950
@@ -1486,162 +1486,6 @@ Wire Wire Line
 Wire Wire Line
 	8050 2525 7900 2525
 Connection ~ 8050 2525
-$Comp
-L Connector_Generic:Conn_02x07_Counter_Clockwise J6
-U 1 1 622DD113
-P 3900 5975
-F 0 "J6" H 3950 6400 50  0000 C CNN
-F 1 "Conn_02x07_Counter_Clockwise" H 3950 6401 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 3900 5975 50  0001 C CNN
-F 3 "~" H 3900 5975 50  0001 C CNN
-	1    3900 5975
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x07_Counter_Clockwise J8
-U 1 1 622DE440
-P 5350 5975
-F 0 "J8" H 5400 6400 50  0000 C CNN
-F 1 "Conn_02x07_Counter_Clockwise" H 5400 6401 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 5350 5975 50  0001 C CNN
-F 3 "~" H 5350 5975 50  0001 C CNN
-	1    5350 5975
-	1    0    0    -1  
-$EndComp
-Text GLabel 3450 5775 0    50   Input ~ 0
-PA0
-Wire Wire Line
-	3450 5775 3700 5775
-Text GLabel 3450 5875 0    50   Input ~ 0
-PA1
-Text GLabel 3450 5975 0    50   Input ~ 0
-PA2
-Text GLabel 3450 6075 0    50   Input ~ 0
-PA3
-Text GLabel 3450 6175 0    50   Input ~ 0
-PA4
-Text GLabel 3450 6275 0    50   Input ~ 0
-PA5
-Wire Wire Line
-	3450 5875 3700 5875
-Wire Wire Line
-	3450 5975 3700 5975
-Wire Wire Line
-	3450 6075 3700 6075
-Wire Wire Line
-	3450 6175 3700 6175
-Wire Wire Line
-	3450 6275 3700 6275
-Wire Wire Line
-	4200 6275 4450 6275
-Text GLabel 4450 6275 2    50   Input ~ 0
-PA6
-Wire Wire Line
-	4200 6175 4450 6175
-Text GLabel 4450 6175 2    50   Input ~ 0
-PA7
-Text GLabel 4450 6075 2    50   Input ~ 0
-PF0
-Text GLabel 4450 5875 2    50   Input ~ 0
-PF2
-Text GLabel 4450 5775 2    50   Input ~ 0
-PF3
-Text GLabel 4900 5775 0    50   Input ~ 0
-PF4
-Text GLabel 4900 5875 0    50   Input ~ 0
-PF5
-Wire Wire Line
-	4450 6075 4200 6075
-Wire Wire Line
-	4200 5975 4450 5975
-Wire Wire Line
-	4450 5875 4200 5875
-Wire Wire Line
-	4450 5775 4200 5775
-Wire Wire Line
-	3700 5675 3575 5675
-$Comp
-L power:GND #PWR035
-U 1 1 6239C8BA
-P 4325 5600
-F 0 "#PWR035" H 4325 5350 50  0001 C CNN
-F 1 "GND" H 4250 5600 50  0000 R CNN
-F 2 "" H 4325 5600 50  0001 C CNN
-F 3 "" H 4325 5600 50  0001 C CNN
-	1    4325 5600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4200 5675 4325 5675
-Wire Wire Line
-	4325 5675 4325 5600
-Wire Wire Line
-	5150 5775 4900 5775
-Text GLabel 4450 5975 2    50   Input ~ 0
-PF1
-Wire Wire Line
-	4900 5875 5150 5875
-Text GLabel 4900 5975 0    50   Input ~ 0
-PC0
-Text GLabel 4900 6075 0    50   Input ~ 0
-PC1
-Text GLabel 4900 6175 0    50   Input ~ 0
-PC2
-Text GLabel 4900 6275 0    50   Input ~ 0
-PC3
-Wire Wire Line
-	4900 5975 5150 5975
-Wire Wire Line
-	4900 6075 5150 6075
-Wire Wire Line
-	4900 6175 5150 6175
-Wire Wire Line
-	4900 6275 5150 6275
-Text GLabel 5900 6275 2    50   Input ~ 0
-PD0
-Text GLabel 5900 6175 2    50   Input ~ 0
-PD1
-Text GLabel 5900 6075 2    50   Input ~ 0
-PD2
-Text GLabel 5900 5975 2    50   Input ~ 0
-PD3
-Text GLabel 5900 5875 2    50   Input ~ 0
-PD4
-Text GLabel 5900 5775 2    50   Input ~ 0
-PD5
-Text GLabel 5900 5675 2    50   Input ~ 0
-PD6
-Text GLabel 4900 5675 0    50   Input ~ 0
-PD7
-Wire Wire Line
-	5900 5775 5650 5775
-Wire Wire Line
-	5650 5875 5900 5875
-Wire Wire Line
-	5650 5975 5900 5975
-Wire Wire Line
-	5650 6075 5900 6075
-Wire Wire Line
-	5650 6175 5900 6175
-Wire Wire Line
-	5650 6275 5900 6275
-Wire Wire Line
-	5650 5675 5900 5675
-Wire Wire Line
-	4900 5675 5150 5675
-$Comp
-L power:+3.3V #PWR?
-U 1 1 624BAA86
-P 3575 5675
-AR Path="/621FA25F/624BAA86" Ref="#PWR?"  Part="1" 
-AR Path="/6220499D/624BAA86" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 3575 5525 50  0001 C CNN
-F 1 "+3.3V" H 3590 5848 50  0000 C CNN
-F 2 "" H 3575 5675 50  0001 C CNN
-F 3 "" H 3575 5675 50  0001 C CNN
-	1    3575 5675
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	500  5200 500  500 
 Wire Notes Line
@@ -1673,14 +1517,6 @@ Wire Notes Line
 Wire Notes Line
 	7650 2050 8500 2050
 Wire Notes Line
-	3150 5250 3150 6650
-Wire Notes Line
-	3150 6650 6150 6650
-Wire Notes Line
-	6150 6650 6150 5250
-Wire Notes Line
-	6150 5250 3150 5250
-Wire Notes Line
 	7100 6500 7100 3950
 Wire Notes Line
 	7100 3950 11200 3950
@@ -1690,8 +1526,6 @@ Wire Notes Line
 	11200 6500 7100 6500
 Text Notes 7750 4150 0    63   Italic 13
 USB TO TTL
-Text Notes 4250 5400 0    63   Italic 13
-HEADERS
 Text Notes 600  5400 0    63   Italic 13
 F-RAM
 Text Notes 4450 4400 0    50   ~ 0
@@ -1730,4 +1564,69 @@ Wire Wire Line
 	1475 5950 1275 5950
 Wire Wire Line
 	1275 5950 1275 5850
+$Comp
+L AVR-CTF-symbols:COM-11821 D9
+U 1 1 6236EC5C
+P 4300 6300
+F 0 "D9" H 4450 6765 50  0000 C CNN
+F 1 "COM-11821" H 4450 6674 50  0000 C CNN
+F 2 "AVR-CTF-footprints:LED_COM-11821" H 4035 5720 50  0001 L BNN
+F 3 "" H 4300 6300 50  0001 L BNN
+F 4 "Sparkfun" H 4470 5930 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer recommendations" H 3790 5815 50  0001 L BNN "STANDARD"
+	1    4300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 623717DB
+P 5100 6100
+F 0 "#PWR013" H 5100 5950 50  0001 C CNN
+F 1 "+5V" H 5115 6273 50  0000 C CNN
+F 2 "" H 5100 6100 50  0001 C CNN
+F 3 "" H 5100 6100 50  0001 C CNN
+	1    5100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6200 5100 6200
+Wire Wire Line
+	5100 6200 5100 6100
+$Comp
+L power:GND #PWR016
+U 1 1 6237E339
+P 5100 6550
+F 0 "#PWR016" H 5100 6300 50  0001 C CNN
+F 1 "GND" H 5300 6550 50  0000 R CNN
+F 2 "" H 5100 6550 50  0001 C CNN
+F 3 "" H 5100 6550 50  0001 C CNN
+	1    5100 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6400 5100 6400
+Wire Wire Line
+	5100 6400 5100 6550
+Wire Wire Line
+	4000 6200 3500 6200
+Text Label 3500 6200 0    50   ~ 0
+LED_RGB_DATA
+NoConn ~ 4900 6300
+NoConn ~ 4900 6100
+Text Label 4550 5650 0    50   ~ 0
+LED_RGB_DATA
+Wire Wire Line
+	4550 5650 4200 5650
+Wire Notes Line
+	3150 5250 5400 5250
+Wire Notes Line
+	5400 5250 5400 6700
+Wire Notes Line
+	5400 6700 3150 6700
+Wire Notes Line
+	3150 6700 3150 5250
+Text Notes 4150 5450 0    63   Italic 13
+LED RGB
+Text GLabel 4200 5650 0    50   Input ~ 0
+PD0
 $EndSCHEMATC
