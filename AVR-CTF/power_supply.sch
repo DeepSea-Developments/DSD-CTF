@@ -380,9 +380,6 @@ Wire Wire Line
 	3250 4700 3700 4700
 Wire Wire Line
 	2875 4700 3250 4700
-Connection ~ 3250 4400
-Wire Wire Line
-	3250 4400 3700 4400
 Wire Wire Line
 	3175 4400 3250 4400
 $Comp
@@ -407,8 +404,6 @@ F 3 "~" H 3250 4550 50  0001 C CNN
 	1    3250 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2425 4400 2575 4400
 $Comp
 L Regulator_Linear:AMS1117-3.3 U7
 U 1 1 6278C8E6
@@ -425,12 +420,12 @@ ESP POWER SUPPLY
 $Comp
 L power:+5V #PWR01
 U 1 1 6278C8F4
-P 2425 4400
-F 0 "#PWR01" H 2425 4250 50  0001 C CNN
-F 1 "+5V" H 2425 4575 50  0000 C CNN
-F 2 "" H 2425 4400 50  0001 C CNN
-F 3 "" H 2425 4400 50  0001 C CNN
-	1    2425 4400
+P 2220 4400
+F 0 "#PWR01" H 2220 4250 50  0001 C CNN
+F 1 "+5V" H 2220 4575 50  0000 C CNN
+F 2 "" H 2220 4400 50  0001 C CNN
+F 3 "" H 2220 4400 50  0001 C CNN
+	1    2220 4400
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -452,5 +447,42 @@ F 3 "" H 3700 4400 50  0001 C CNN
 	1    3700 4400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 62350913
+P 2400 4400
+AR Path="/62350913" Ref="R?"  Part="1" 
+AR Path="/620E3406/62350913" Ref="R?"  Part="1" 
+AR Path="/621FA25F/62350913" Ref="R18"  Part="1" 
+F 0 "R18" V 2500 4400 50  0000 C CNN
+F 1 "0" V 2300 4390 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2330 4400 50  0001 C CNN
+F 3 "~" H 2400 4400 50  0001 C CNN
+	1    2400 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2570 4400 2550 4400
+Wire Wire Line
+	2250 4400 2220 4400
+$Comp
+L Device:R R?
+U 1 1 6235288C
+P 3490 4400
+AR Path="/6235288C" Ref="R?"  Part="1" 
+AR Path="/620E3406/6235288C" Ref="R?"  Part="1" 
+AR Path="/621FA25F/6235288C" Ref="R19"  Part="1" 
+F 0 "R19" V 3390 4310 50  0000 C CNN
+F 1 "0" V 3390 4390 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3420 4400 50  0001 C CNN
+F 3 "~" H 3490 4400 50  0001 C CNN
+	1    3490 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 4400 3340 4400
+Connection ~ 3250 4400
+Wire Wire Line
+	3640 4400 3700 4400
 Connection ~ 3700 4400
 $EndSCHEMATC

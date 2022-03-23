@@ -289,17 +289,6 @@ F 3 "~" H 5775 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
-U 1 1 62117B2A
-P 5775 2650
-F 0 "C10" H 5890 2696 50  0000 L CNN
-F 1 "0.1uF" H 5890 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5813 2500 50  0001 C CNN
-F 3 "~" H 5775 2650 50  0001 C CNN
-	1    5775 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR021
 U 1 1 62117B30
 P 5775 2850
@@ -327,8 +316,6 @@ Wire Wire Line
 Wire Wire Line
 	5775 2450 5775 2475
 Wire Wire Line
-	5775 2800 5775 2825
-Wire Wire Line
 	5775 2475 5375 2475
 Wire Wire Line
 	5375 2475 5375 2275
@@ -336,9 +323,6 @@ Wire Wire Line
 	5375 2275 4950 2275
 Wire Wire Line
 	4950 2275 4950 2375
-Connection ~ 5775 2475
-Wire Wire Line
-	5775 2475 5775 2500
 Connection ~ 4950 2375
 Wire Wire Line
 	4950 2375 5050 2375
@@ -353,7 +337,6 @@ Wire Wire Line
 Connection ~ 4950 3000
 Wire Wire Line
 	4950 3000 5050 3000
-Connection ~ 5775 2825
 Wire Wire Line
 	5775 2825 5775 2850
 Text Label 5600 2475 2    50   ~ 0

@@ -1,4 +1,4 @@
-19419460524178410
+19422756385099552
 AVR-CTF-footprints
 AVR32DA32-I&slash_PT
 
@@ -21,12 +21,26 @@ GCT_USB3090-XX-X_REVE
 9
 9
 AVR-CTF-footprints
+LED_COM-11821
+
+
+0
+6
+6
+AVR-CTF-footprints
 Push_button_FSM4JSMATR
 
 
 0
 4
 4
+AVR-CTF-footprints
+logo
+
+
+0
+0
+0
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
