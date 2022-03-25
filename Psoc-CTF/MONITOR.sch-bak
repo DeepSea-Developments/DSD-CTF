@@ -371,7 +371,7 @@ U 1 1 625AE0CF
 P 1750 4625
 F 0 "J3" H 1668 4200 50  0000 C CNN
 F 1 "Prog" H 1668 4291 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1750 4625 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 1750 4625 50  0001 C CNN
 F 3 "~" H 1750 4625 50  0001 C CNN
 	1    1750 4625
 	-1   0    0    1   

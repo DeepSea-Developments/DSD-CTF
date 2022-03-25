@@ -375,11 +375,7 @@ Wire Wire Line
 Wire Wire Line
 	2575 2025 2300 2025
 Wire Wire Line
-	2575 2125 2300 2125
-Wire Wire Line
 	2575 2225 2300 2225
-Wire Wire Line
-	2575 2325 2300 2325
 Wire Wire Line
 	2575 2425 2300 2425
 Wire Wire Line
@@ -672,10 +668,6 @@ Wire Wire Line
 	2575 1925 2175 1925
 Wire Wire Line
 	4175 1225 4550 1225
-Wire Wire Line
-	4175 1325 4550 1325
-Wire Wire Line
-	4175 1125 4550 1125
 Wire Wire Line
 	4175 1425 4550 1425
 Wire Wire Line
@@ -2239,9 +2231,7 @@ Wire Notes Line
 Wire Notes Line
 	550  6200 5100 6200
 Wire Notes Line
-	5600 8050 3825 8050
-Wire Notes Line
-	5600 7200 5600 8050
+	5600 8260 3825 8260
 Text Notes 1800 6350 0    62   ~ 0
 PIN HEADERS
 Text Notes 4025 6350 0    62   ~ 0
@@ -2250,50 +2240,6 @@ Text Notes 3875 7350 0    62   ~ 0
 RGB LED
 NoConn ~ 7950 5875
 NoConn ~ 7950 5975
-$Comp
-L power:GND1 #PWR058
-U 1 1 622855DE
-P 2300 2325
-F 0 "#PWR058" H 2300 2075 50  0001 C CNN
-F 1 "GND1" V 2305 2197 50  0000 R CNN
-F 2 "" H 2300 2325 50  0001 C CNN
-F 3 "" H 2300 2325 50  0001 C CNN
-	1    2300 2325
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND1 #PWR057
-U 1 1 62285D2A
-P 2300 2125
-F 0 "#PWR057" H 2300 1875 50  0001 C CNN
-F 1 "GND1" V 2305 1997 50  0000 R CNN
-F 2 "" H 2300 2125 50  0001 C CNN
-F 3 "" H 2300 2125 50  0001 C CNN
-	1    2300 2125
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND1 #PWR061
-U 1 1 622860AC
-P 4550 1125
-F 0 "#PWR061" H 4550 875 50  0001 C CNN
-F 1 "GND1" V 4555 997 50  0000 R CNN
-F 2 "" H 4550 1125 50  0001 C CNN
-F 3 "" H 4550 1125 50  0001 C CNN
-	1    4550 1125
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND1 #PWR062
-U 1 1 622CDC9D
-P 4550 1325
-F 0 "#PWR062" H 4550 1075 50  0001 C CNN
-F 1 "GND1" V 4555 1197 50  0000 R CNN
-F 2 "" H 4550 1325 50  0001 C CNN
-F 3 "" H 4550 1325 50  0001 C CNN
-	1    4550 1325
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5275 3925 5575 3925
 Wire Wire Line
@@ -3172,17 +3118,6 @@ Text Label 2425 3425 0    50   ~ 0
 RXD2
 Text Label 2425 3525 0    50   ~ 0
 TXD2
-$Comp
-L power:GND1 #PWR0103
-U 1 1 623C2929
-P 2175 1925
-F 0 "#PWR0103" H 2175 1675 50  0001 C CNN
-F 1 "GND1" V 2180 1797 50  0000 R CNN
-F 2 "" H 2175 1925 50  0001 C CNN
-F 3 "" H 2175 1925 50  0001 C CNN
-	1    2175 1925
-	0    1    1    0   
-$EndComp
 Text Label 8900 2925 0    60   ~ 0
 A4
 Text Label 8900 3025 0    60   ~ 0
@@ -3299,4 +3234,56 @@ F 3 "" H 1675 8275 50  0001 C CNN
 $EndComp
 Connection ~ 1675 8275
 Connection ~ 1200 10175
+Text Label 4870 8150 0    50   ~ 0
+LED_RGB_DATA
+Text GLabel 4550 8150 0    50   Input ~ 0
+P2.0
+Wire Notes Line
+	5600 7200 5600 8260
+Wire Wire Line
+	4550 8150 4870 8150
+$Comp
+L power:GND #PWR?
+U 1 1 625A71D9
+P 4700 1125
+AR Path="/625A71D9" Ref="#PWR?"  Part="1" 
+AR Path="/62149449/625A71D9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4700 875 50  0001 C CNN
+F 1 "GND" H 4705 952 50  0000 C CNN
+F 2 "" H 4700 1125 50  0001 C CNN
+F 3 "" H 4700 1125 50  0001 C CNN
+	1    4700 1125
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4175 1125 4625 1125
+Wire Wire Line
+	4625 1325 4625 1125
+Wire Wire Line
+	4175 1325 4625 1325
+Connection ~ 4625 1125
+Wire Wire Line
+	4625 1125 4700 1125
+$Comp
+L power:GND #PWR?
+U 1 1 6262817F
+P 2175 2125
+AR Path="/6262817F" Ref="#PWR?"  Part="1" 
+AR Path="/62149449/6262817F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2175 1875 50  0001 C CNN
+F 1 "GND" H 2180 1952 50  0000 C CNN
+F 2 "" H 2175 2125 50  0001 C CNN
+F 3 "" H 2175 2125 50  0001 C CNN
+	1    2175 2125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2175 2125 2175 1925
+Wire Wire Line
+	2175 2125 2575 2125
+Wire Wire Line
+	2175 2125 2175 2325
+Wire Wire Line
+	2175 2325 2575 2325
+Connection ~ 2175 2125
 $EndSCHEMATC
