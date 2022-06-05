@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "D:\\Documentos\\Proyectos Kicad\\Kicad 5\\DeepSea\\DSD-CTF\\AVR-CTF\\AVR-CTF.sch")
-    (date "4/06/2022 11:18:49 p. m.")
+    (date "4/06/2022 11:26:49 p. m.")
     (tool "Eeschema (5.1.12)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
