@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IN-P55TATRGB
+D LED RGB CLEAR 6PLCC SMD
+K LED, RGB, SMD
+F https://www.inolux-corp.com/datasheet/SMDLED/RGB%20Top%20View/IN-P55TATRGB.pdf
+$ENDCMP
+#
+#End Doc Library

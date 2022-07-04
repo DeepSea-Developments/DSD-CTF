@@ -324,7 +324,7 @@ F 3 "" H 4600 950 50  0001 C CNN
 	1    4600 950 
 	1    0    0    -1  
 $EndComp
-Text Label 3700 5050 0    50   ~ 0
+Text Label 3500 5000 0    50   ~ 0
 5VEXT
 Wire Wire Line
 	6200 5000 6250 5000
@@ -481,15 +481,11 @@ FTDI_TX
 Wire Wire Line
 	5000 3650 5350 3650
 Wire Wire Line
-	4000 3450 3650 3450
-Wire Wire Line
 	4000 3850 3650 3850
 Wire Wire Line
 	5000 3450 5350 3450
 Wire Wire Line
 	5000 3850 5350 3850
-Text Label 3650 3450 0    50   ~ 0
-ESP_TX
 Text Label 3650 3850 0    50   ~ 0
 MCU_TX
 Text Label 5350 3450 2    50   ~ 0
@@ -520,17 +516,6 @@ F 3 "" H 2400 1100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 1100 2400 1150
-$Comp
-L RF_Module:ESP32-WROOM-32D U3
-U 1 1 62BE5BDA
-P 6950 2350
-F 0 "U3" H 6950 4050 50  0000 C CNN
-F 1 "ESP32-WROOM-32D" H 6950 3950 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 6950 850 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 6650 2400 50  0001 C CNN
-	1    6950 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L PTS526_SMG15_SMTR2_LFS:PTS526_SM08_SMTR2_LFS S2
 U 1 1 62C0835C
@@ -623,10 +608,6 @@ NoConn ~ 6350 2750
 NoConn ~ 6350 2850
 NoConn ~ 6350 1350
 NoConn ~ 6350 1450
-Wire Wire Line
-	7550 1250 7850 1250
-Wire Wire Line
-	7550 1450 7850 1450
 $Comp
 L PTS526_SMG15_SMTR2_LFS:PTS526_SM08_SMTR2_LFS S3
 U 1 1 62C293C3
@@ -698,9 +679,9 @@ F 3 "~" H 8400 1450 50  0001 C CNN
 	1    8400 1450
 	-1   0    0    -1  
 $EndComp
-Text Label 7850 1250 2    50   ~ 0
+Text Label 8250 1250 2    50   ~ 0
 ESP_TX
-Text Label 7850 1450 2    50   ~ 0
+Text Label 8250 1450 2    50   ~ 0
 ESP_RX
 Wire Wire Line
 	7550 2550 8000 2550
@@ -845,41 +826,33 @@ F 3 "" H 6250 5000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4500 5000 4550 5000
+	4500 5000 4650 5000
 $Comp
 L power:GND #PWR04
 U 1 1 62CC4459
-P 4550 5000
-F 0 "#PWR04" H 4550 4750 50  0001 C CNN
-F 1 "GND" V 4555 4872 50  0000 R CNN
-F 2 "" H 4550 5000 50  0001 C CNN
-F 3 "" H 4550 5000 50  0001 C CNN
-	1    4550 5000
+P 4650 5000
+F 0 "#PWR04" H 4650 4750 50  0001 C CNN
+F 1 "GND" V 4655 4872 50  0000 R CNN
+F 2 "" H 4650 5000 50  0001 C CNN
+F 3 "" H 4650 5000 50  0001 C CNN
+	1    4650 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3V3 #PWR014
 U 1 1 62CCC349
-P 5650 5000
-F 0 "#PWR014" H 5650 4850 50  0001 C CNN
-F 1 "+3V3" V 5665 5128 50  0000 L CNN
-F 2 "" H 5650 5000 50  0001 C CNN
-F 3 "" H 5650 5000 50  0001 C CNN
-	1    5650 5000
+P 3850 4800
+F 0 "#PWR014" H 3850 4650 50  0001 C CNN
+F 1 "+3V3" V 3865 4928 50  0000 L CNN
+F 2 "" H 3850 4800 50  0001 C CNN
+F 3 "" H 3850 4800 50  0001 C CNN
+	1    3850 4800
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5650 5000 5700 5000
 Text GLabel 8000 2850 2    50   Input ~ 0
 IO25
 Text GLabel 8000 2950 2    50   Input ~ 0
 IO26
-Text GLabel 8000 3050 2    50   Input ~ 0
-IO27
-Text GLabel 8000 3150 2    50   Input ~ 0
-IO32
-Text GLabel 8000 3250 2    50   Input ~ 0
-IO33
 Wire Wire Line
 	7550 2850 8000 2850
 Wire Wire Line
@@ -961,9 +934,9 @@ F 3 "~" H 9300 2300 50  0001 C CNN
 	1    9300 2300
 	1    0    0    -1  
 $EndComp
-Text Label 8550 2450 0    50   ~ 0
-ESP_SDA
 Text Label 9700 2450 2    50   ~ 0
+ESP_SDA
+Text Label 8550 2450 0    50   ~ 0
 ESP_SCL
 $Comp
 L power:+3V3 #PWR029
@@ -1009,8 +982,6 @@ Wire Notes Line
 	3400 3100 3400 5150
 Wire Notes Line
 	6850 5150 6850 4050
-Wire Notes Line
-	600  5150 6850 5150
 Text Notes 2300 700  0    50   ~ 10
 USB TO TTL
 Text Notes 8700 700  0    50   ~ 10
@@ -1047,11 +1018,11 @@ Text GLabel 6350 4700 2    50   Input ~ 0
 IO5
 Wire Wire Line
 	6350 4700 6200 4700
-Text GLabel 5600 4800 0    50   Input ~ 0
+Text GLabel 6300 4800 2    50   Input ~ 0
 IO16
 Wire Wire Line
 	5600 4800 5700 4800
-Text GLabel 6300 4800 2    50   Input ~ 0
+Text GLabel 5600 4800 0    50   Input ~ 0
 IO17
 Wire Wire Line
 	6300 4800 6200 4800
@@ -1059,52 +1030,38 @@ Wire Wire Line
 	5350 4900 5700 4900
 Wire Wire Line
 	6550 4900 6200 4900
-Text GLabel 3900 4500 0    50   Input ~ 0
-IO32
 Wire Wire Line
 	3900 4500 4000 4500
-Text GLabel 4600 4500 2    50   Input ~ 0
-IO33
 Wire Wire Line
 	4600 4500 4500 4500
-Text GLabel 3900 4600 0    50   Input ~ 0
+Text GLabel 3900 4500 0    50   Input ~ 0
 IO25
 Wire Wire Line
 	3900 4600 4000 4600
-Text GLabel 4600 4600 2    50   Input ~ 0
+Text GLabel 4600 4500 2    50   Input ~ 0
 IO26
 Wire Wire Line
 	4600 4600 4500 4600
-Text GLabel 3900 4700 0    50   Input ~ 0
-IO27
 Wire Wire Line
 	3900 4700 4000 4700
-Text GLabel 4600 4700 2    50   Input ~ 0
+Text GLabel 3900 4600 0    50   Input ~ 0
 IO14
 Wire Wire Line
 	4600 4700 4500 4700
-Text GLabel 3900 4800 0    50   Input ~ 0
+Text GLabel 4600 4600 2    50   Input ~ 0
 IO12
-Wire Wire Line
-	3900 4800 4000 4800
-Text GLabel 4600 4800 2    50   Input ~ 0
+Text GLabel 3900 4700 0    50   Input ~ 0
 IO13
 Wire Wire Line
 	4600 4800 4500 4800
-Text GLabel 3900 4900 0    50   Input ~ 0
+Text GLabel 4600 4700 2    50   Input ~ 0
 IO15
 Wire Wire Line
 	3900 4900 4000 4900
-Text GLabel 4600 4900 2    50   Input ~ 0
+Text GLabel 4600 4800 2    50   Input ~ 0
 IO2
 Wire Wire Line
-	4600 4900 4500 4900
-Wire Wire Line
-	3700 5050 3950 5050
-Wire Wire Line
-	3950 5050 3950 5000
-Wire Wire Line
-	3950 5000 4000 5000
+	3500 5000 3900 5000
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J2
 U 1 1 62BF5530
@@ -1127,8 +1084,179 @@ F 3 "~" H 5900 4700 50  0001 C CNN
 	1    5900 4700
 	1    0    0    -1  
 $EndComp
-Text Label 6550 4900 0    50   ~ 0
+Text Label 5350 4900 0    50   ~ 0
 MCU_RX
-Text Label 5350 4900 2    50   ~ 0
+Text Label 6550 4900 2    50   ~ 0
 MCU_TX
+Text Label 3650 3450 0    50   ~ 0
+ESP_TX
+Wire Wire Line
+	4000 3450 3650 3450
+$Comp
+L Device:R R9
+U 1 1 62C402C7
+P 7800 1450
+F 0 "R9" V 7750 1300 50  0000 C CNN
+F 1 "0" V 7800 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7730 1450 50  0001 C CNN
+F 3 "~" H 7800 1450 50  0001 C CNN
+	1    7800 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32D U3
+U 1 1 62BE5BDA
+P 6950 2350
+F 0 "U3" H 6950 4050 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 6950 3950 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 6950 850 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 6650 2400 50  0001 C CNN
+	1    6950 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1450 7650 1450
+Wire Wire Line
+	7950 1450 8250 1450
+$Comp
+L Device:R R8
+U 1 1 62C51B4B
+P 7800 1250
+F 0 "R8" V 7750 1100 50  0000 C CNN
+F 1 "0" V 7800 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7730 1250 50  0001 C CNN
+F 3 "~" H 7800 1250 50  0001 C CNN
+	1    7800 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 1250 7650 1250
+Wire Wire Line
+	7950 1250 8250 1250
+$Comp
+L IN-P55TATRGB:IN-P55TATRGB D5
+U 1 1 62C8A79A
+P 8100 4650
+F 0 "D5" H 8050 5131 50  0000 C CNN
+F 1 "IN-P55TATRGB" H 8050 5040 50  0000 C CNN
+F 2 "Footprints:LED_IN-P55TATRGB" H 7750 3900 50  0001 L BNN
+F 3 "https://www.inolux-corp.com/datasheet/SMDLED/RGB%20Top%20View/IN-P55TATRGB.pdf" H 8150 4650 50  0001 L BNN
+F 4 "1.5mm" H 7850 3650 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "Manufacturer Recommended" H 7650 3750 50  0001 L BNN "STANDARD"
+F 6 "1.0" H 8050 3600 50  0001 L BNN "PARTREV"
+F 7 "Inolux" H 8200 3650 50  0001 L BNN "MANUFACTURER"
+	1    8100 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 62C8C511
+P 7550 4500
+F 0 "R10" V 7750 4450 50  0000 L CNN
+F 1 "15" V 7650 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7480 4500 50  0001 C CNN
+F 3 "~" H 7550 4500 50  0001 C CNN
+	1    7550 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 4500 7700 4500
+$Comp
+L Device:R R11
+U 1 1 62C9C674
+P 7550 4650
+F 0 "R11" V 7600 4400 50  0000 L CNN
+F 1 "39" V 7500 4400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7480 4650 50  0001 C CNN
+F 3 "~" H 7550 4650 50  0001 C CNN
+	1    7550 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 62C9C8F7
+P 7550 4800
+F 0 "R12" V 7450 4750 50  0000 L CNN
+F 1 "15" V 7350 4750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7480 4800 50  0001 C CNN
+F 3 "~" H 7550 4800 50  0001 C CNN
+	1    7550 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 4650 7800 4650
+Wire Wire Line
+	7700 4800 7800 4800
+Wire Wire Line
+	8300 4500 8400 4500
+Wire Wire Line
+	8400 4500 8400 4650
+Wire Wire Line
+	8400 4800 8300 4800
+Wire Wire Line
+	8300 4650 8400 4650
+Connection ~ 8400 4650
+Wire Wire Line
+	8400 4650 8400 4800
+$Comp
+L power:GND #PWR0101
+U 1 1 62CC2E4A
+P 8400 4800
+F 0 "#PWR0101" H 8400 4550 50  0001 C CNN
+F 1 "GND" H 8405 4672 50  0000 R CNN
+F 2 "" H 8400 4800 50  0001 C CNN
+F 3 "" H 8400 4800 50  0001 C CNN
+	1    8400 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 4800
+Wire Wire Line
+	7400 4500 6950 4500
+Wire Wire Line
+	7400 4650 6950 4650
+Wire Wire Line
+	7400 4800 6950 4800
+Text Label 6950 4500 0    50   ~ 0
+RGB_GREEN
+Text Label 6950 4650 0    50   ~ 0
+RGB_RED
+Text Label 6950 4800 0    50   ~ 0
+RGB_BLUE
+Wire Notes Line
+	8550 5150 8550 4050
+Wire Notes Line
+	600  5150 8550 5150
+Text Notes 7050 4200 0    50   ~ 10
+LED RGB
+Wire Wire Line
+	3900 4900 3900 5000
+Wire Wire Line
+	3900 5000 4000 5000
+Connection ~ 3900 5000
+Wire Wire Line
+	4650 4900 4650 5000
+Wire Wire Line
+	4500 4900 4650 4900
+Connection ~ 4650 5000
+Wire Wire Line
+	3850 4800 4000 4800
+$Comp
+L power:GND #PWR0102
+U 1 1 62D2E9D4
+P 5650 5000
+F 0 "#PWR0102" H 5650 4750 50  0001 C CNN
+F 1 "GND" V 5655 4872 50  0000 R CNN
+F 2 "" H 5650 5000 50  0001 C CNN
+F 3 "" H 5650 5000 50  0001 C CNN
+	1    5650 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 5000 5650 5000
+Text Label 8000 3050 2    50   ~ 0
+RGB_GREEN
+Text Label 8000 3150 2    50   ~ 0
+RGB_RED
+Text Label 8000 3250 2    50   ~ 0
+RGB_BLUE
 $EndSCHEMATC
