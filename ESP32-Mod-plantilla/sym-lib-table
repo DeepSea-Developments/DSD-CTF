@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name FT231XS-R)(type Legacy)(uri ${KIPRJMOD}/Symbols.pretty/FT231XS-R.lib)(options "")(descr ""))
+  (lib (name JS202011SCQN)(type Legacy)(uri ${KIPRJMOD}/Symbols.pretty/JS202011SCQN.lib)(options "")(descr ""))
+  (lib (name PTS526_SMG15_SMTR2_LFS)(type Legacy)(uri ${KIPRJMOD}/Symbols.pretty/PTS526_SMG15_SMTR2_LFS.lib)(options "")(descr ""))
+  (lib (name IN-P55TATRGB)(type Legacy)(uri ${KIPRJMOD}/Symbols.pretty/IN-P55TATRGB.lib)(options "")(descr ""))
+)

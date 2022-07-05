@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FT231XS-R
+D IC USB SERIAL FULL UART SSOP20
+K FTDI
+$ENDCMP
+#
+#End Doc Library
